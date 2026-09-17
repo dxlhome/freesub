@@ -5,32 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  server: 116.204.164.27
-  port: 7443
+  server: 104.238.148.149
+  port: 443
   udp: true
   type: vless
-  uuid: c9b314e9-47f1-4d4d-be52-30b538777b14
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /about?ed=2560
     headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+      Host: cdn8848.776676.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: 118.167.212.163
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   server: 7dba81fc3a0b.oylfmxz.cn
   port: 443
   udp: true
@@ -44,7 +32,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   server: 82259754d625.oylfmxz.cn
   port: 443
   udp: true
@@ -68,7 +56,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,6 +64,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
