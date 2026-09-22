@@ -5,64 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  tls: true
-  servername: a.cwvps.eu.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  tls: true
-  servername: cfvvv-ev1.pages.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  tls: true
-  servername: cfvvv-ev1.pages.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: 🌐 其他地区 (Other) 04 - xiaohe
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 05 - xiaohe
-  server: 104.17.147.22
+  server: 104.16.72.41
   port: 443
   udp: true
   type: trojan
@@ -72,17 +15,32 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🌐 其他地区 (Other) 06 - xiaohe
-  server: 104.17.147.22
+- name: 🌐 其他地区 (Other) 02 - xiaohe
+  server: 104.16.72.41
   port: 443
   udp: true
   type: trojan
-  password: Telegram_healer_config
-  sni: to6r63-kkchighqm2.vxz0dduq7to7su0cdqf.workers.dev
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /tr/mPZ7O1CUbIBPGNPZQ2HeV?ed=2560
+    path: /assignment
+- name: 🌐 其他地区 (Other) 03 - xiaohe
+  server: 172.67.164.249
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
+  tls: true
+  servername: 3-m9.e29eacc3-4cf6-48c2-a90e-c53b3da8b1ef.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /BzuntJ8qZN0TRKbC8TveMxJ0
+    headers:
+      Host: 3-m9.e29eacc3-4cf6-48c2-a90e-c53b3da8b1ef.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -91,9 +49,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - xiaohe
   - 🌐 其他地区 (Other) 02 - xiaohe
   - 🌐 其他地区 (Other) 03 - xiaohe
-  - 🌐 其他地区 (Other) 04 - xiaohe
-  - 🌐 其他地区 (Other) 05 - xiaohe
-  - 🌐 其他地区 (Other) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -102,8 +57,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - xiaohe
   - 🌐 其他地区 (Other) 02 - xiaohe
   - 🌐 其他地区 (Other) 03 - xiaohe
-  - 🌐 其他地区 (Other) 04 - xiaohe
-  - 🌐 其他地区 (Other) 05 - xiaohe
-  - 🌐 其他地区 (Other) 06 - xiaohe
 rules:
 - MATCH,PROXIES
