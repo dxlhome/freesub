@@ -4,25 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.67.149.248",
+      "type": "trojan",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+      "server": "104.18.32.87",
       "server_port": 443,
-      "uuid": "ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "tls": {
         "enabled": true,
-        "server_name": "IMg-edGE-M16-3.HUAngsHANg.pP.UA",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "id1.nathaya.web.id",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/JRr6VGcSLFc034DC6sDbwyWJLbB",
+        "path": "/trojan#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
         "headers": {
-          "Host": "IMG-edGe-m16-3.hUAnGSHANg.PP.uA"
+          "Host": "id1.nathaya.web.id"
         }
       }
     },
@@ -31,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
